@@ -40,3 +40,5 @@ window.testReactRoot = document.createElement("div");
 // fiber root node will be created under window.testReactRoot._reactRootContainer
 // the previous fiberNode is under window.testReactRoot._reactRootContainer._internalRoot.current.child
 ReactDOM.render(instance, window.testReactRoot);
+
+// document.body.appendChild(window.testReactRoot)

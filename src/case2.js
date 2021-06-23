@@ -26,7 +26,7 @@ const Case2 = () => {
         <>
             <button onClick={() => setCount(count + 1)}>+</button>
             <div>{count}</div>
-            {/* the following code has error, caused by non memoized legacy ref callback */}
+            {/* the following code has error, caused by non memoized legacy ref callback, which results in ShouldMemoized props change */}
             <ShouldMemoized ref={(div) => (ref.current = div)} />
         </>
     );
